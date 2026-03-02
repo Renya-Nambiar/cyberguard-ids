@@ -2,7 +2,8 @@ scikit-learn
 numpy
 pandas
 joblib
-streamlit
+streamlit>=1.35.0
+altair<5
 scapy
 plotly
 matplotlib
