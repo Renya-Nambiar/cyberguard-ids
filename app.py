@@ -179,4 +179,4 @@ with tabs[1]:
                 malicious_ips = ['10.0.0.5', '192.168.1.100']
                 df.loc[df['src_ip'].isin(malicious_ips), 'label'] = 'ATTACK'
 
-                st.write("### 📝 Detailed Traffic Log
+                st.write("### 📝 Detailed Traffic Log")
