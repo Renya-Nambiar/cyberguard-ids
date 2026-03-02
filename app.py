@@ -7,7 +7,16 @@ import psutil
 import numpy as np
 import gdown
 from scapy.all import sniff, rdpcap
-from scapy.arch.windows import get_windows_if_list
+import platform
+
+# Only import Windows-specific tools if we are actually on Windows
+if platform.system() == "Windows":
+    from scapy.arch.windows import get_windows_if_list
+else:
+    # On Linux (Streamlit Cloud), we don't need this, 
+    # or we use a generic way to get interfaces
+    def get_windows_if_list():
+        return []
 
 # Suppress Scapy manufacturer database warnings
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
