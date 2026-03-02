@@ -20,8 +20,3 @@ psutil
 pywin32
 
 
- cd c:\ids-ml
-
- .\.venv\Scripts\Activate
-
- streamlit run src/dashboard/app.py
