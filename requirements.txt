@@ -1,0 +1,27 @@
+﻿scikit-learn==1.5.1
+numpy==2.1.2
+pandas==2.2.3
+joblib==1.4.2
+streamlit==1.39.0
+scapy==2.5.0
+plotly==5.24.1
+matplotlib==3.9.2
+
+
+scikit-learn==1.5.1
+numpy==2.1.2
+pandas==2.2.3
+joblib==1.4.2
+streamlit==1.39.0
+scapy==2.5.0
+plotly==5.24.1
+matplotlib==3.9.2
+psutil
+pywin32
+
+
+ cd c:\ids-ml
+
+ .\.venv\Scripts\Activate
+
+ streamlit run src/dashboard/app.py
